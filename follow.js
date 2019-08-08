@@ -35,7 +35,7 @@ for(var bot of settings.accauntsBots) {
     signIn(bot)
         .then(() => {
             logger.info('Logged in ' + bot.botLogin + "!");
-            followUsers(settings.accauntsForLikes)
+            followUsers(settings.accauntsForSubscribe)
             .then(() => {
                 logger.info('Logged in ' + bot.botLogin + "!");
                 signOut(bot.botLogin);
